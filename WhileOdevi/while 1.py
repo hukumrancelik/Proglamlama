@@ -1,7 +1,7 @@
 satisM=500
 fiyat=20
 ciro=5000
-i=1
+i=0
 while True:
     satisM=satisM+200
     fiyat=fiyat+20
