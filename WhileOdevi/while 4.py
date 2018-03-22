@@ -1,10 +1,13 @@
-haftalikMesai=""
-while True:
-    haftalikMesai=float(input("Haftalik Mesai Saatini Giriniz:"))
-    ekMesai=((90*0.10)*50*30)
-    toplamMaas=(50*90*30)+(haftalikMesai*ekMesai)#normal maaş+#mesai
-    print("Ek mesai için ödenecek aylık ücret:",ekMesai,"TL")
-    print("Personele ödenecek mesaili toplam aylık maaş:",toplamMaas,"TL")
-    if(haftalikMesai>22/4):
-        print("Aylık Maksimum Mesai Saati 22'dir")
-        break
+calisan=50
+yevmiye=90
+aylik_mesai=0
+haftalik_maas=630
+aylik_maas=0
+while aylik_mesai<=22:
+    haftalik_mesai=int(input("Haftalik mesai giriniz:"))
+    aylik_mesai=haftalik_mesai*4
+    haftalik_maas=haftalik_maas+(haftalik_mesai*yevmiye*0.10)
+    aylik_maas=aylik_maas+haftalik_maas*4
+    print("Aylik maas:",aylik_maas)
+else:
+    print("Aylik mesai 22 saatten fazla olamaz")
