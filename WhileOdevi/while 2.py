@@ -1,14 +1,12 @@
-#stok=a
-#satis=b
-#alis=c
-a=10000
-b=500
-c=100
-i=1
+satisM=500
+fiyat=20
+ciro=5000
+i=0
 while True:
-    a=a-b+c
+    ciro=(ciro)+satisM*fiyat
+    satisM=satisM+200
+    fiyat=fiyat+10
     i=i+1
-    if(a==0):
-        print(i,"ay sonra stoklarınız sıfırlanır")
+    if(ciro>500000):
+        print(i,"ay sonra cironuz",ciro)
         break
-    
